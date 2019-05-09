@@ -31,8 +31,8 @@ module.exports = {
                         loader: 'url-loader',
                         options: {
                             limit: 100000,
-                            name: '/img/[name].[hash:7].[ext]',
-                            publicPath: '/dist'
+                            name: 'img/[name].[hash:7].[ext]'
+                            // publicPath: '/dist'
                         }
                     }
                 ]
@@ -57,7 +57,7 @@ module.exports = {
 
     plugins: [
         // 清理dist文件
-        new CleanWebpackPlugin(),
+        // new CleanWebpackPlugin(),
 
         // css单独打包
         new MiniCssExtractPlugin({
@@ -70,6 +70,6 @@ module.exports = {
             template: './src/index.html',
             filename: 'index.html'
             // inject: true
-        })
+        }),
     ]
 };
