@@ -1,0 +1,14 @@
+.title {
+    color: red;
+}
+img {
+    width: 300px;
+    height: 200px;
+}
+.bj-img {
+    display: inline-block;
+    width: 100px;
+    height: 200px;
+    background-image: url('./assets/img/bj.jpg');
+    background-size: cover;
+}
