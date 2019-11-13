@@ -129,7 +129,7 @@ function debounce(fn) {
     };
 }
 function sayHi() {
-    console.log('防抖成功');
+    console.log('防抖成功1111');
 }
 
 var inp = document.getElementById('inp');
