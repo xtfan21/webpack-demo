@@ -142,7 +142,7 @@ inp.addEventListener('input', debounce(sayHi)); // 防抖
  * @returns {Function}
  */
 function throttle(fn) {
-    let canRun = true; // 通过闭包保存一个标记12
+    let canRun = true; // 通过闭包保存一个标记
     return function () {
         if (!canRun) return; // 在函数开头判断标记是否为true，不为true则return
         canRun = false; // 立即设置为false
